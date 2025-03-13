@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Text.Json.Serialization;
 
 namespace CoinGecko.Net.Objects.Models
@@ -32,7 +32,7 @@ namespace CoinGecko.Net.Objects.Models
         /// Current price
         /// </summary>
         [JsonPropertyName("current_price")]
-        public decimal CurrentPrice { get; set; }
+        public decimal? CurrentPrice { get; set; }
         /// <summary>
         /// Market cap
         /// </summary>
@@ -102,7 +102,7 @@ namespace CoinGecko.Net.Objects.Models
         /// All time high price
         /// </summary>
         [JsonPropertyName("ath")]
-        public decimal AllTimeHigh { get; set; }
+        public decimal? AllTimeHigh { get; set; }
         /// <summary>
         /// All time high change percentage
         /// </summary>
@@ -118,7 +118,7 @@ namespace CoinGecko.Net.Objects.Models
         /// All time low price
         /// </summary>
         [JsonPropertyName("atl")]
-        public decimal AllTimeLow { get; set; }
+        public decimal? AllTimeLow { get; set; }
         /// <summary>
         /// All time low change percentage
         /// </summary>
@@ -152,7 +152,7 @@ namespace CoinGecko.Net.Objects.Models
         /// Times
         /// </summary>
         [JsonPropertyName("times")]
-        public decimal Times { get; set; }
+        public decimal? Times { get; set; }
         /// <summary>
         /// Investment asset
         /// </summary>
@@ -162,6 +162,6 @@ namespace CoinGecko.Net.Objects.Models
         /// Profit percentage
         /// </summary>
         [JsonPropertyName("percentage")]
-        public decimal Percentage { get; set; }
+        public decimal? Percentage { get; set; }
     }
 }
