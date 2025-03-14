@@ -37,7 +37,7 @@ namespace CoinGecko.Net.Objects.Models
         /// Market cap
         /// </summary>
         [JsonPropertyName("market_cap")]
-        public decimal MarketCap { get; set; }
+        public decimal? MarketCap { get; set; }
         /// <summary>
         /// Market cap rank
         /// </summary>
@@ -52,7 +52,7 @@ namespace CoinGecko.Net.Objects.Models
         /// Total trade volume
         /// </summary>
         [JsonPropertyName("total_volume")]
-        public decimal TotalVolume { get; set; }
+        public decimal? TotalVolume { get; set; }
         /// <summary>
         /// 24 hour high price
         /// </summary>
@@ -87,7 +87,7 @@ namespace CoinGecko.Net.Objects.Models
         /// Circulating supply
         /// </summary>
         [JsonPropertyName("circulating_supply")]
-        public decimal CiculationSupply { get; set; }
+        public decimal? CiculationSupply { get; set; }
         /// <summary>
         /// Total supply
         /// </summary>
