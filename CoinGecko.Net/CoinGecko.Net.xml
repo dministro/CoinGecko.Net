@@ -51,13 +51,13 @@
         <member name="M:CoinGecko.Net.Clients.CoinGeckoRestClientApi.GetAssetsAsync(System.Nullable{System.Boolean},System.Threading.CancellationToken)">
             <inheritdoc />
         </member>
-        <member name="M:CoinGecko.Net.Clients.CoinGeckoRestClientApi.GetMarketsAsync(System.String,System.Collections.Generic.IEnumerable{System.String},System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Boolean},System.Collections.Generic.IEnumerable{System.String},System.String,System.String,System.Threading.CancellationToken)">
+        <member name="M:CoinGecko.Net.Clients.CoinGeckoRestClientApi.GetMarketsAsync(System.String,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Boolean},System.Collections.Generic.IEnumerable{System.String},System.String,System.String,System.Threading.CancellationToken)">
             <inheritdoc />
         </member>
-        <member name="M:CoinGecko.Net.Clients.CoinGeckoRestClientApi.GetAssetDetailsAsync(System.String,System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Threading.CancellationToken)">
+        <member name="M:CoinGecko.Net.Clients.CoinGeckoRestClientApi.GetAssetDetailsAsync(System.String,System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{CoinGecko.Net.Enums.DexPairFormat},System.Threading.CancellationToken)">
             <inheritdoc />
         </member>
-        <member name="M:CoinGecko.Net.Clients.CoinGeckoRestClientApi.GetTickersAsync(System.String,System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.Boolean},System.Nullable{System.Int32},System.String,System.Nullable{System.Boolean},System.Threading.CancellationToken)">
+        <member name="M:CoinGecko.Net.Clients.CoinGeckoRestClientApi.GetTickersAsync(System.String,System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.Boolean},System.Nullable{System.Int32},System.String,System.Nullable{System.Boolean},System.Nullable{CoinGecko.Net.Enums.DexPairFormat},System.Threading.CancellationToken)">
             <inheritdoc />
         </member>
         <member name="M:CoinGecko.Net.Clients.CoinGeckoRestClientApi.GetAssetHistoryAsync(System.String,System.DateTime,System.Nullable{System.Boolean},System.Threading.CancellationToken)">
@@ -72,7 +72,7 @@
         <member name="M:CoinGecko.Net.Clients.CoinGeckoRestClientApi.GetOhlcAsync(System.String,System.String,System.Int32,System.String,System.Threading.CancellationToken)">
             <inheritdoc />
         </member>
-        <member name="M:CoinGecko.Net.Clients.CoinGeckoRestClientApi.GetPricesAsync(System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.String,System.Threading.CancellationToken)">
+        <member name="M:CoinGecko.Net.Clients.CoinGeckoRestClientApi.GetPricesAsync(System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.String,System.Threading.CancellationToken)">
             <inheritdoc />
         </member>
         <member name="M:CoinGecko.Net.Clients.CoinGeckoRestClientApi.GetTokenPricesAsync(System.String,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.String,System.Threading.CancellationToken)">
@@ -105,10 +105,10 @@
         <member name="M:CoinGecko.Net.Clients.CoinGeckoRestClientApi.GetExchangeListAsync(System.Threading.CancellationToken)">
             <inheritdoc />
         </member>
-        <member name="M:CoinGecko.Net.Clients.CoinGeckoRestClientApi.GetExchangeDetailsAsync(System.String,System.Threading.CancellationToken)">
+        <member name="M:CoinGecko.Net.Clients.CoinGeckoRestClientApi.GetExchangeDetailsAsync(System.String,System.Nullable{CoinGecko.Net.Enums.DexPairFormat},System.Threading.CancellationToken)">
             <inheritdoc />
         </member>
-        <member name="M:CoinGecko.Net.Clients.CoinGeckoRestClientApi.GetExchangeTickersAsync(System.String,System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.Boolean},System.Nullable{System.Int32},System.Nullable{System.Boolean},System.String,System.Threading.CancellationToken)">
+        <member name="M:CoinGecko.Net.Clients.CoinGeckoRestClientApi.GetExchangeTickersAsync(System.String,System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.Boolean},System.Nullable{System.Int32},System.Nullable{System.Boolean},System.String,System.Nullable{CoinGecko.Net.Enums.DexPairFormat},System.Threading.CancellationToken)">
             <inheritdoc />
         </member>
         <member name="M:CoinGecko.Net.Clients.CoinGeckoRestClientApi.GetExchangeVolumeHistoryAsync(System.String,System.Int32,System.Threading.CancellationToken)">
@@ -236,6 +236,740 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.Boolean">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.NullableBoolean">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.Decimal">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.NullableDecimal">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.Double">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.NullableDouble">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoApiUsage">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoApiUsageArray">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoAsset">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoAssetArray">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoAssetDetails">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoAssetDetailsArray">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoAssetExchange">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoAssetExchangeArray">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoAssetHistory">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoAssetHistoryArray">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoAssetPlatform">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoAssetPlatformArray">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoAssetResult">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoAssetResultArray">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoCategory">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoCategoryArray">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoCategoryResult">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoCategoryResultArray">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoCodeAddDel">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoCodeAddDelArray">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoCommunityData">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoCommunityDataArray">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoCompanyAsset">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoCompanyAssetArray">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoCompanyHolding">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoCompanyHoldingArray">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoDerivative">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoDerivativeArray">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoDerivativeTicker">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoDerivativeTickerArray">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoDeveloperData">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoDeveloperDataArray">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoExchange">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoExchangeArray">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoExchangeDerivative">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoExchangeDerivativeArray">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoExchangeDetails">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoExchangeDetailsArray">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoExchangeRate">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoExchangeRateArray">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoExchangeRates">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoExchangeRatesArray">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoExchangeResult">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoExchangeResultArray">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoGlobalData">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoGlobalDataArray">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoGlobalDataWrapper">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoGlobalDataWrapperArray">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoGlobalDefiData">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoGlobalDefiDataArray">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoGlobalDefiDataWrapper">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoGlobalDefiDataWrapperArray">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoImages">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoImagesArray">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoLinks">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoLinksArray">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoListItem">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoListItemArray">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoMarket">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoMarketArray">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoMarketChart">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoMarketChartArray">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoMarketChartValue">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoMarketChartValueArray">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoMarketData">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoMarketDataArray">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoMarketDataBasic">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoMarketDataBasicArray">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoMarketDataCategory">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoMarketDataCategoryArray">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoMarketRoi">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoMarketRoiArray">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoNft">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoNftArray">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoNftDate">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoNftDateArray">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoNftDetails">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoNftDetailsArray">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoNftLink">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoNftLinkArray">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoNftResult">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoNftResultArray">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoNftValue">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoNftValueArray">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoOhlc">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoOhlcArray">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoPlatform">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoPlatformArray">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoProject">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoProjectArray">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoPublicInterestStats">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoPublicInterestStatsArray">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoSearchResult">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoSearchResultArray">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoStatusUpdate">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoStatusUpdateArray">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoTicker">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoTickerArray">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoTickers">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoTickersArray">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoTrendingAsset">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoTrendingAssetArray">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoTrendingCategory">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoTrendingCategoryArray">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoTrendingCategoryData">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoTrendingCategoryDataArray">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoTrendingNft">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoTrendingNftArray">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoTrendingNftData">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoTrendingNftDataArray">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoTrendingSearch">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.CoinGeckoTrendingSearchArray">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.ItemWrapperCoinGeckoTrendingAsset">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.ItemWrapperCoinGeckoTrendingAssetArray">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.DictionaryStringNullableDecimal">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.DictionaryStringDecimal">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.DictionaryStringCoinGeckoExchangeRate">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.DictionaryStringCoinGeckoPlatform">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.DictionaryStringDictionaryStringNullableDecimal">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.DictionaryStringIEnumerableString">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.DictionaryStringDateTime">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.DictionaryStringString">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.IDictionaryStringObject">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.IEnumerableString">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.DateTime">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.NullableDateTime">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.Int32">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.NullableInt32">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.Int32Array">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.Int64">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.NullableInt64">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.Object">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.String">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.StringArray">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.Default">
+            <summary>
+            The default <see cref="T:System.Text.Json.Serialization.JsonSerializerContext"/> associated with a default <see cref="T:System.Text.Json.JsonSerializerOptions"/> instance.
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.GeneratedSerializerOptions">
+            <summary>
+            The source-generated options associated with this context.
+            </summary>
+        </member>
+        <member name="M:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.#ctor">
+            <inheritdoc/>
+        </member>
+        <member name="M:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.#ctor(System.Text.Json.JsonSerializerOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:CoinGecko.Net.Converters.CoinGeckoSourceGenerationContext.GetTypeInfo(System.Type)">
+            <inheritdoc/>
+        </member>
+        <member name="T:CoinGecko.Net.Enums.DexPairFormat">
+            <summary>
+            DEX pair formatting
+            </summary>
+        </member>
+        <member name="F:CoinGecko.Net.Enums.DexPairFormat.Symbol">
+            <summary>
+            As symbol, for example `USDC`
+            </summary>
+        </member>
+        <member name="F:CoinGecko.Net.Enums.DexPairFormat.ContractAddress">
+            <summary>
+            As contract address
+            </summary>
+        </member>
         <member name="T:CoinGecko.Net.Interfaces.ICoinGeckoRestClient">
             <summary>
             Client for accessing the CoinGecko Rest API. 
@@ -245,12 +979,13 @@
             <summary>
             Api endpoints
             </summary>
+            <see cref="T:CoinGecko.Net.Interfaces.ICoinGeckoRestClientApi"/>
         </member>
         <member name="M:CoinGecko.Net.Interfaces.ICoinGeckoRestClient.SetOptions(CryptoExchange.Net.Objects.Options.UpdateOptions)">
             <summary>
             Update specific options
             </summary>
-            <param name="options">Options to update. Only specific options are changable after the client has been created</param>
+            <param name="options">Options to update. Only specific options are changeable after the client has been created</param>
         </member>
         <member name="T:CoinGecko.Net.Interfaces.ICoinGeckoRestClientApi">
             <summary>
@@ -265,7 +1000,7 @@
             <param name="ct">Cancellation token</param>
             <returns></returns>
         </member>
-        <member name="M:CoinGecko.Net.Interfaces.ICoinGeckoRestClientApi.GetAssetDetailsAsync(System.String,System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Threading.CancellationToken)">
+        <member name="M:CoinGecko.Net.Interfaces.ICoinGeckoRestClientApi.GetAssetDetailsAsync(System.String,System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{CoinGecko.Net.Enums.DexPairFormat},System.Threading.CancellationToken)">
             <summary>
             Get asset details
             <para><a href="https://docs.coingecko.com/v3.0.1/reference/coins-id" /></para>
@@ -277,6 +1012,7 @@
             <param name="communityData">Include community data</param>
             <param name="developerData">Include developer data</param>
             <param name="sparkline">Include sparkline</param>
+            <param name="dexPairFormat">Dex pair formatting. Defaults to ContractAddress</param>
             <param name="ct">Cancellation token</param>
             <returns></returns>
         </member>
@@ -353,12 +1089,13 @@
             <param name="ct">Cancellation token</param>
             <returns></returns>
         </member>
-        <member name="M:CoinGecko.Net.Interfaces.ICoinGeckoRestClientApi.GetExchangeDetailsAsync(System.String,System.Threading.CancellationToken)">
+        <member name="M:CoinGecko.Net.Interfaces.ICoinGeckoRestClientApi.GetExchangeDetailsAsync(System.String,System.Nullable{CoinGecko.Net.Enums.DexPairFormat},System.Threading.CancellationToken)">
             <summary>
             Get exchange details
             <para><a href="https://docs.coingecko.com/v3.0.1/reference/exchanges-id" /></para>
             </summary>
             <param name="exchangeId">Id of the exchange</param>
+            <param name="dexPairFormat">Dex pair formatting. Defaults to ContractAddress</param>
             <param name="ct">Cancellation token</param>
             <returns></returns>
         </member>
@@ -380,7 +1117,7 @@
             <param name="ct">Cancellation token</param>
             <returns></returns>
         </member>
-        <member name="M:CoinGecko.Net.Interfaces.ICoinGeckoRestClientApi.GetExchangeTickersAsync(System.String,System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.Boolean},System.Nullable{System.Int32},System.Nullable{System.Boolean},System.String,System.Threading.CancellationToken)">
+        <member name="M:CoinGecko.Net.Interfaces.ICoinGeckoRestClientApi.GetExchangeTickersAsync(System.String,System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.Boolean},System.Nullable{System.Int32},System.Nullable{System.Boolean},System.String,System.Nullable{CoinGecko.Net.Enums.DexPairFormat},System.Threading.CancellationToken)">
             <summary>
             Get exchange tickers
             <para><a href="https://docs.coingecko.com/v3.0.1/reference/exchanges-id-tickers" /></para>
@@ -391,6 +1128,7 @@
             <param name="page">Page</param>
             <param name="depth">Include orderbook 2% depth</param>
             <param name="order">Sort</param>
+            <param name="dexPairFormat">Dex pair formatting. Defaults to ContractAddress</param>
             <param name="ct">Cancellation token</param>
             <returns></returns>
         </member>
@@ -475,13 +1213,14 @@
             <param name="ct">Cancellation token</param>
             <returns></returns>
         </member>
-        <member name="M:CoinGecko.Net.Interfaces.ICoinGeckoRestClientApi.GetMarketsAsync(System.String,System.Collections.Generic.IEnumerable{System.String},System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Boolean},System.Collections.Generic.IEnumerable{System.String},System.String,System.String,System.Threading.CancellationToken)">
+        <member name="M:CoinGecko.Net.Interfaces.ICoinGeckoRestClientApi.GetMarketsAsync(System.String,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Boolean},System.Collections.Generic.IEnumerable{System.String},System.String,System.String,System.Threading.CancellationToken)">
             <summary>
             Get coins market data
             <para><a href="https://docs.coingecko.com/v3.0.1/reference/coins-markets" /></para>
             </summary>
             <param name="quoteAsset">Quote asset</param>
-            <param name="assetIds">Asset ids</param>
+            <param name="assetIds">Asset ids, for example `bitcoin` and `tether`</param>
+            <param name="symbols">Symbols, for example `btc` and `usdt`</param>
             <param name="category">Category filter</param>
             <param name="order">Sorting</param>
             <param name="page">Page</param>
@@ -505,13 +1244,14 @@
             <param name="ct">Cancellation token</param>
             <returns></returns>
         </member>
-        <member name="M:CoinGecko.Net.Interfaces.ICoinGeckoRestClientApi.GetPricesAsync(System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.String,System.Threading.CancellationToken)">
+        <member name="M:CoinGecko.Net.Interfaces.ICoinGeckoRestClientApi.GetPricesAsync(System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.String,System.Threading.CancellationToken)">
             <summary>
             Get prices for specific assets
             <para><a href="https://docs.coingecko.com/v3.0.1/reference/simple-price" /></para>
             </summary>
-            <param name="ids">Asset ids to get data for</param>
+            <param name="ids">Asset ids to get data for, for example `bitcoin` and `tether`</param>
             <param name="quoteAssets">Quote assets</param>
+            <param name="symbols">Symbols, for example `btc` and `usdt`</param>
             <param name="includeMarketCap">Include market cap</param>
             <param name="include24hrVolume">Include 24h volume</param>
             <param name="include24hrChange">Include 24h change</param>
@@ -528,7 +1268,7 @@
             <param name="ct">Cancellation token</param>
             <returns></returns>
         </member>
-        <member name="M:CoinGecko.Net.Interfaces.ICoinGeckoRestClientApi.GetTickersAsync(System.String,System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.Boolean},System.Nullable{System.Int32},System.String,System.Nullable{System.Boolean},System.Threading.CancellationToken)">
+        <member name="M:CoinGecko.Net.Interfaces.ICoinGeckoRestClientApi.GetTickersAsync(System.String,System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.Boolean},System.Nullable{System.Int32},System.String,System.Nullable{System.Boolean},System.Nullable{CoinGecko.Net.Enums.DexPairFormat},System.Threading.CancellationToken)">
             <summary>
             Get tickers for an asset
             <para><a href="https://docs.coingecko.com/v3.0.1/reference/coins-id-tickers" /></para>
@@ -539,6 +1279,7 @@
             <param name="page">Page</param>
             <param name="order">Sorting</param>
             <param name="depth">Include 2% order book depth info</param>
+            <param name="dexPairFormat">Dex pair formatting. Defaults to ContractAddress</param>
             <param name="ct">Cancellation token</param>
             <returns></returns>
         </member>
@@ -790,7 +1531,12 @@
         </member>
         <member name="P:CoinGecko.Net.Objects.Models.CoinGeckoAssetDetails.HashingAlgorithm">
             <summary>
-            Hasing algorithm
+            Hashing algorithm
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Objects.Models.CoinGeckoAssetDetails.ContractAddress">
+            <summary>
+            Contract address
             </summary>
         </member>
         <member name="P:CoinGecko.Net.Objects.Models.CoinGeckoAssetDetails.Categories">
@@ -851,6 +1597,11 @@
         <member name="P:CoinGecko.Net.Objects.Models.CoinGeckoAssetDetails.SentimentVotesDownPercentage">
             <summary>
             Sentiment down votes percentage
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Objects.Models.CoinGeckoAssetDetails.WatchListPortfolioUsers">
+            <summary>
+            Watchlist portfolio users
             </summary>
         </member>
         <member name="P:CoinGecko.Net.Objects.Models.CoinGeckoAssetDetails.MarketCapRank">
@@ -1056,11 +1807,6 @@
         <member name="P:CoinGecko.Net.Objects.Models.CoinGeckoCommunityData.FacebookLikes">
             <summary>
             Facebook likes
-            </summary>
-        </member>
-        <member name="P:CoinGecko.Net.Objects.Models.CoinGeckoCommunityData.TwitterFollowers">
-            <summary>
-            Twitter followers
             </summary>
         </member>
         <member name="P:CoinGecko.Net.Objects.Models.CoinGeckoCommunityData.RedditAveragePostsPer48h">
@@ -1445,7 +2191,7 @@
         </member>
         <member name="P:CoinGecko.Net.Objects.Models.CoinGeckoExchangeDerivative.Name">
             <summary>
-            Mame
+            Name
             </summary>
         </member>
         <member name="P:CoinGecko.Net.Objects.Models.CoinGeckoExchangeDerivative.Id">
@@ -1613,6 +2359,16 @@
             Normalized trade volume in btc last 24h
             </summary>
         </member>
+        <member name="P:CoinGecko.Net.Objects.Models.CoinGeckoExchangeDetails.Assets">
+            <summary>
+            Number of assets
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Objects.Models.CoinGeckoExchangeDetails.Symbols">
+            <summary>
+            Number of symbols
+            </summary>
+        </member>
         <member name="P:CoinGecko.Net.Objects.Models.CoinGeckoExchangeDetails.Tickers">
             <summary>
             Tickers
@@ -1763,6 +2519,11 @@
             Small image
             </summary>
         </member>
+        <member name="P:CoinGecko.Net.Objects.Models.CoinGeckoImages.Small2">
+            <summary>
+            Small image 2
+            </summary>
+        </member>
         <member name="P:CoinGecko.Net.Objects.Models.CoinGeckoImages.Large">
             <summary>
             Large image
@@ -1826,6 +2587,11 @@
         <member name="P:CoinGecko.Net.Objects.Models.CoinGeckoLinks.SubredditUrl">
             <summary>
             Subreddit url
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Objects.Models.CoinGeckoLinks.SnapshotUrl">
+            <summary>
+            Snapshot url
             </summary>
         </member>
         <member name="P:CoinGecko.Net.Objects.Models.CoinGeckoLinks.RepoUrls">
@@ -2288,6 +3054,11 @@
             Content
             </summary>
         </member>
+        <member name="P:CoinGecko.Net.Objects.Models.CoinGeckoMarketDataCategory.Top3CoinIds">
+            <summary>
+            Top 3 coin id
+            </summary>
+        </member>
         <member name="P:CoinGecko.Net.Objects.Models.CoinGeckoMarketDataCategory.Top3Coins">
             <summary>
             Top 3 coins
@@ -2361,6 +3132,11 @@
         <member name="P:CoinGecko.Net.Objects.Models.CoinGeckoNftDetails.Symbol">
             <summary>
             Symbol
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Objects.Models.CoinGeckoNftDetails.MarketCapRank">
+            <summary>
+            Market cap rank
             </summary>
         </member>
         <member name="P:CoinGecko.Net.Objects.Models.CoinGeckoNftDetails.Images">
@@ -2513,7 +3289,7 @@
             Explorer links
             </summary>
         </member>
-        <member name="P:CoinGecko.Net.Objects.Models.CoinGeckoNftDetails.Exlorers">
+        <member name="P:CoinGecko.Net.Objects.Models.CoinGeckoNftDetails.Explorers">
             <summary>
             Explorer links
             </summary>
@@ -2856,6 +3632,16 @@
         <member name="P:CoinGecko.Net.Objects.Models.CoinGeckoTicker.Volume">
             <summary>
             Trade volume
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Objects.Models.CoinGeckoTicker.CostToMoveUpUsd">
+            <summary>
+            Cost to move up in usd
+            </summary>
+        </member>
+        <member name="P:CoinGecko.Net.Objects.Models.CoinGeckoTicker.CostToMoveDownUsd">
+            <summary>
+            Cost to move down in usd
             </summary>
         </member>
         <member name="P:CoinGecko.Net.Objects.Models.CoinGeckoTicker.ConvertedLast">
@@ -3243,6 +4029,12 @@
             <param name="services">The service collection</param>
             <param name="optionsDelegate">Set options for the CoinGecko services</param>
             <returns></returns>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Binder.SourceGeneration.BindingExtensions.Bind_CoinGeckoRestOptions(Microsoft.Extensions.Configuration.IConfiguration,System.Object)">
+            <summary>Attempts to bind the given object instance to configuration values by matching property names against configuration keys recursively.</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Binder.SourceGeneration.BindingExtensions.ValidateConfigurationKeys(System.Type,System.Lazy{System.Collections.Generic.HashSet{System.String}},Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Configuration.BinderOptions)">
+            <summary>If required by the binder options, validates that there are no unknown keys in the input configuration object.</summary>
         </member>
     </members>
 </doc>

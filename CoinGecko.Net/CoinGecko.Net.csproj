@@ -1,18 +1,18 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.0;netstandard2.1</TargetFrameworks>
+    <TargetFrameworks>net8.0;net9.0;netstandard2.0;netstandard2.1</TargetFrameworks>
     <Nullable>enable</Nullable>
-    <LangVersion>10.0</LangVersion>
+    <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <PackageId>CoinGecko.Net</PackageId>
     <Authors>JKorf</Authors>
-    <PackageVersion>3.4.0</PackageVersion>
-    <AssemblyVersion>3.4.0</AssemblyVersion>
-    <FileVersion>3.4.0</FileVersion>
+    <PackageVersion>4.10.0</PackageVersion>
+    <AssemblyVersion>4.10.0</AssemblyVersion>
+    <FileVersion>4.10.0</FileVersion>
     <Description>CoinGecko.Net is a client library for accessing the CoinGecko REST API. All data is mapped to readable models and enum values.</Description>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <PackageTags>CoinGecko;CoinGecko.Net;CoinGecko Client;CoinGecko API;CryptoCurrency</PackageTags>
+    <PackageTags>CoinGecko;CoinGecko.Net;CoinGecko Client;CoinGecko API;CryptoCurrency;CryptoExchange.Net</PackageTags>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/JKorf/CoinGecko.Net.git</RepositoryUrl>
     <PackageProjectUrl>https://github.com/JKorf/CoinGecko.Net</PackageProjectUrl>
@@ -21,7 +21,11 @@
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <NeutralLanguage>en</NeutralLanguage>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <EnableConfigurationBindingGenerator>true</EnableConfigurationBindingGenerator>
     <PackageReleaseNotes>https://github.com/JKorf/CoinEx.Net?tab=readme-ov-file#release-notes</PackageReleaseNotes>
+  </PropertyGroup>
+  <PropertyGroup Label="AOT" Condition="$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'net7.0'))">
+    <IsAotCompatible>true</IsAotCompatible>
   </PropertyGroup>
   <PropertyGroup>
     <DocumentationFile>CoinGecko.Net.xml</DocumentationFile>
@@ -48,7 +52,7 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="CryptoExchange.Net" Version="8.8.0" />
+    <PackageReference Include="CryptoExchange.Net" Version="9.10.0" />
     <PackageReference Include="Microsoft.CodeAnalysis.NetAnalyzers" Version="9.0.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
